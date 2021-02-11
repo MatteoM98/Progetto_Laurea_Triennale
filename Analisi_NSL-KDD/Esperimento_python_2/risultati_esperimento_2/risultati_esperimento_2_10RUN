@@ -1,0 +1,11 @@
+****** Risultati dopo 10 iterazioni ******
+Istanze totali nel training set:  61643
+Istanze totali nel test:  86874
+Istanze normali nel test:  15411
+Istanze anomalie nel test:  71463
+percentuali di anomalie classificate correttamente:  [77.3155339126541, 77.22877573009809, 77.7255362915075, 77.227376404573, 59.951303471726625, 77.29454402977764, 77.54782194982019, 77.08184654996292, 77.17280270909421, 77.65277136420245]
+media percentuale di anomalie classificate correttamente:  75.62
+percentuali di anomalie classificate come normali (FN):  [22.6844660873459, 22.771224269901907, 22.274463708492505, 22.772623595427007, 40.04869652827337, 22.705455970222353, 22.452178050179814, 22.91815345003708, 22.827197290905783, 22.347228635797546]
+media percentuale di anomalie classificate come normali (FN):  24.38
+percentuali di istanze normali classificate come anormali (FP):  [22.6844660873459, 22.771224269901907, 22.274463708492505, 22.772623595427007, 40.04869652827337, 22.705455970222353, 22.452178050179814, 22.91815345003708, 22.827197290905783, 22.347228635797546]
+media percentuale di istanze normali classificate come anormali (FP):  24.38

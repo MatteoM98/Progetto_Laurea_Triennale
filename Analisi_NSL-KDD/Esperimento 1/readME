@@ -1,0 +1,24 @@
+dataset: contiente i dataset usati per l'analisi
+
+Result_FullTrainNormal_FullTestAnomaly: contiene i risultati avuti con l'utilizzo
+dell' intero dataset normal (per l'addestramento) e l'intero dataset anomaly per il test
+
+
+Result_TrainNormal20_TestAnomaly20: contiene i risultati avuti con l'utilizzo del 
+dataset KDDTrain_OnlyNormal20% (contiene il 20% dell' intero dataset only normal)
+e il test set KDDTest_OnlyAnomaly20% (contiene il 20% dell' intero dataset KDDTest_OnlyAnomaly)
+
+
+Result_TrainNormal20_TestAnomaly80Normal20: contiene i risultati avuti con l'utilizzo del
+dataset KDDTrain_OnlyNormal20% per l'addestramento, e il test set KDDTest_20%Normal80%Anomaly
+(che contiene piu o meno lo stesso numero di istanze della versione 20%, ma suddivisa a 
+sua volta in 20% istanze normali e 80% anomalie)
+
+Result_FullTrainNormal_TestAnomaly80Normal20: contiene i risultati avuti con l'utilizzo del
+dataset KDDTrain_OnlyNormal per l'addestramento e il test set KDDTest_20%Normal80%Anomaly
+
+
+Analisi_csv: file .csv riassuntivo delle analisi fatte
+
+Analisi.pdf: analisi scritta dei risultati ottenuti
+

@@ -1,0 +1,11 @@
+Usare il programma inserendo il path prima del Train_set e poi del Test_set.
+
+Esempio
+
+>> python3  script.py   ./dataset/KDD_Train_80%Normal_Filtered_simple.arff    ./dataset/KDD_Test_NormalAnomaly.arff
+
+
+risultati_esperimento_1: risultati dati dagli stessi dataset usati nel primo esperimento in WEKA
+risultati_esperimento_2: risultati dati dagli stessi dataset usati nel secondo esperimento in WEKA
+
+

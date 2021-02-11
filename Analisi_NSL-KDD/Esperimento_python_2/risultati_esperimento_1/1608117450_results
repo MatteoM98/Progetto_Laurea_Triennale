@@ -1,0 +1,8 @@
+****** Risultati ******
+Istanze totali nel training set:  61644
+Istanze totali nel test:  86873
+Istanze normali nel test:  15410
+Istanze anomalie nel test:  71463
+percentuale di anomalie classificate correttamente:  81.95
+percentuale di anomalie classificate come normali (FN):  18.05
+percentuale di istanze normali classificate come anormali (FP):  11.86

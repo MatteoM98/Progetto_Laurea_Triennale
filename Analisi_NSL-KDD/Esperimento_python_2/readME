@@ -1,0 +1,26 @@
+Usare il programma inserendo il path prima del Train_set e poi del Test_set.
+
+Esempio
+
+>> python3  script.py   ./dataset/KDD_Train_80%Normal_Filtered_simple.arff    ./dataset/KDD_Test_NormalAnomaly.arff
+
+
+Esempio script_mean.py
+
+>> python3 script_mean.py ./dataset/KDD_Train_80%Normal_Filtered_simple.arff    ./dataset/KDD_Test_NormalAnomaly.arff 10
+
+il numero dopo il path_test indica il numero di RUN che si vogliono fare
+
+
+
+risultati_esperimento_1: cartella che contiene i risultati dati dagli stessi dataset usati nel primo esperimento in WEKA ripetuti singolarmente con lo script 'script.py'
+
+risultati_esperimento_2: cartella che contiene i risultati dati dagli stessi dataset usati nel secondo esperimento in WEKA ripetuti singolarmente con lo script 'script.py'
+
+
+risultati_esperimento_1_10RUN: contiente la media dei risultati ottenuti con lo script 'script_mean.py' dopo 10 RUN
+risultati_esperimento_2_10RUN: contiente la media dei risultati ottenuti con lo script 'script_mean.py' dopo 10 RUN
+
+
+
+
