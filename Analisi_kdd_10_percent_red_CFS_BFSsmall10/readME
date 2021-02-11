@@ -1,0 +1,12 @@
+- ogni cartella contiene i file relativi ad ogni algoritmo da lei affidato,
+  (all' interno di IBK troverà delle sottocartelle per i diversi valori di K)
+
+- per ogni algoritmo troverà tre file:
+    1) il file del modello
+    2) un file .csv con la distrubuzione delle probabilità
+    3) un file che riporta l'output del software WEKA
+
+- la relazione la trova sia in formato .odt che .pdf
+
+- il file analisi_algoritmi, contiene una tabella riassuntiva
+  dei risultati principali ottenuti dai vari algoritmi messi a confronto

@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 5 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     kdd_10_percent-weka.filters.unsupervised.attribute.NumericToBinary-R7-weka.filters.unsupervised.attribute.NumericToBinary-R12-weka.filters.unsupervised.attribute.NumericToBinary-R14-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.Remove-R20-weka.filters.unsupervised.attribute.NumericToBinary-R20-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 2 -N 5-weka.filters.supervised.instance.Resample-B0.0-S1-Z10.0-no-replacement
+Instances:    49394
+Attributes:   16
+              Protocol
+              Service
+              Flag
+              src_byte
+              dst_byte
+              Land_binarized
+              Wrong_fragment
+              Urgent
+              Logged_in_binarized
+              count
+              srv_count
+              same_srv_rate
+              diff_srv_rate
+              dst_host_same_srv_rate
+              dst_host_same_src_port_rate
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 5 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       49333               99.8765 %
+Incorrectly Classified Instances        61                0.1235 %
+Kappa statistic                          0.9979
+Mean absolute error                      0.0002
+Root mean squared error                  0.0114
+Relative absolute error                  0.2689 %
+Root relative squared error              6.1384 %
+Total Number of Instances            49394     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.999    0.001    0.997      0.999    0.998      0.998    1.000     1.000     normal.
+                 0.000    0.000    ?          0.000    ?          ?        0.867     0.181     buffer_overflow.
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     neptune.
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     smurf.
+                 0.800    0.000    0.500      0.800    0.615      0.632    1.000     0.818     guess_passwd.
+                 1.000    0.000    0.963      1.000    0.981      0.981    1.000     1.000     pod.
+                 0.979    0.000    1.000      0.979    0.990      0.990    1.000     0.989     teardrop.
+                 0.971    0.000    0.962      0.971    0.967      0.966    1.000     0.990     portsweep.
+                 0.992    0.000    0.925      0.992    0.957      0.958    1.000     0.952     ipsweep.
+                 0.000    0.000    ?          0.000    ?          ?        1.000     1.000     land.
+                 0.977    0.000    0.991      0.977    0.984      0.984    1.000     0.988     back.
+                 0.000    0.000    ?          0.000    ?          ?        1.000     0.500     imap.
+                 0.949    0.000    0.993      0.949    0.971      0.971    1.000     0.996     satan.
+                 0.565    0.000    0.929      0.565    0.703      0.724    0.958     0.664     nmap.
+                 0.000    0.000    ?          0.000    ?          ?        0.998     0.507     warezmaster.
+                 0.941    0.000    0.914      0.941    0.928      0.927    0.996     0.938     warezclient.
+                 0.000    0.000    0.000      0.000    0.000      -0.000   0.997     0.008     rootkit.
+Weighted Avg.    0.999    0.000    ?          0.999    ?          ?        1.000     0.999     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g     h     i     j     k     l     m     n     o     p     q   <-- classified as
+  9715     0     0     0     1     0     0     0     0     0     2     0     0     0     0     8     1 |     a = normal.
+     1     0     0     0     1     0     0     0     0     0     0     0     0     0     0     1     0 |     b = buffer_overflow.
+     0     0 10719     0     1     0     0     0     0     0     0     0     0     0     0     0     0 |     c = neptune.
+     2     0     0 28076     0     1     0     0     0     0     0     0     0     0     0     0     0 |     d = smurf.
+     1     0     0     0     4     0     0     0     0     0     0     0     0     0     0     0     0 |     e = guess_passwd.
+     0     0     0     0     0    26     0     0     0     0     0     0     0     0     0     0     0 |     f = pod.
+     2     0     0     0     0     0    95     0     0     0     0     0     0     0     0     0     0 |     g = teardrop.
+     0     0     1     0     1     0     0   101     1     0     0     0     0     0     0     0     0 |     h = portsweep.
+     1     0     0     0     0     0     0     0   123     0     0     0     0     0     0     0     0 |     i = ipsweep.
+     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     j = land.
+     5     0     0     0     0     0     0     0     0     0   215     0     0     0     0     0     0 |     k = back.
+     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     l = imap.
+     3     0     0     0     0     0     0     4     0     0     0     0   150     1     0     0     0 |     m = satan.
+     0     0     0     0     0     0     0     0     9     0     0     0     1    13     0     0     0 |     n = nmap.
+     2     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     o = warezmaster.
+     6     0     0     0     0     0     0     0     0     0     0     0     0     0     0    96     0 |     p = warezclient.
+     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0 |     q = rootkit.
+
